@@ -1,0 +1,11 @@
+Manejo Estudiantil - Plataforma para estudiantes y su productividad
+
+- Agregar asignaciones
+- Organizar sus tareas
+- Organizar sus examenes 
+- Agregar y organizar proyectos académicos
+
+----
+Estableciendo:
+
+Recordatorios, y visualizar el progreso de cada asignación.
