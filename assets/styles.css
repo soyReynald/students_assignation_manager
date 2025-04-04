@@ -1,0 +1,184 @@
+/* 
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   Name: reset CSS
+   Purpose: To clear CSS, from usual bad 
+   or unusual behaviors.
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**
+* Basic table styles
+* Source: https://css-tricks.com/complete-guide-table-element/
+**/
+
+  body {
+    background: #ccc;
+  }
+  main {
+    width: 800px;
+    margin: 0 auto;
+    background: white;
+  }
+  table {
+    border: 1px solid red;
+    margin: 5px 0;
+  }
+  table thead tr td {
+    border: 1px solid red;
+    margin: 5px 0;
+  }
+
+  /*
+  * Styling to make it more accesible
+  * Source: https://codepen.io/jh3y/pen/dyqzzaV
+  * & : https://freefrontend.com/css-buttons/
+  */
+
+  table tbody tr td:last-child {
+    border-left: 1px solid red;
+    padding-left: 4px;
+    padding-bottom: 4px;
+    padding-right: 1px;
+  }
+
+  
+:root{
+    --bg-color-1: #0e6665;
+    --bg-color-2: #FFD433;
+    --bg-color-3: #FF90E8;
+    --padding: 1rem 1rem;
+    --font-family: monospace;
+    --step: 0.4rem;
+  }
+  
+  /*   transform: translate3d(-0.5rem, -0.5rem, 0) */
+  button:is(:hover, :focus-visible) {
+    --active: 1;
+  }
+  
+  button {
+    --active: 0;
+    color: white;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-weight: bold;
+    border: 0;
+    background: transparent;
+    padding: 0;
+  }
+  
+  button span:first-of-type {
+    padding: var(--padding);
+  }
+  
+  button span:not(:first-of-type) {
+    position: absolute;
+  }
+  
+  [aria-hidden] { color: transparent; }
+  button span {
+    inset: 0;
+    display: grid;
+    background: var(--bg);
+    place-items: center;
+    transition: 0.2s ease;
+    border: 2px solid black;
+  /*   transform:
+      translate(
+        calc((var(--active) * var(--coefficient, 0)) * (var(--step) * -1)),
+        calc((var(--active) * var(--coefficient, 0)) * (var(--step) * -1))
+      ); */
+    translate:
+      calc((var(--active) * var(--coefficient, 0)) * (var(--step) * -1))
+      calc((var(--active) * var(--coefficient, 0)) * (var(--step) * -1))
+    ;
+  }
+  
+  span:nth-of-type(1) {
+    --bg: var(--bg-color-3);
+  }
+  
+  span:nth-of-type(2) {
+    --coefficient: 1;
+    --bg: var(--bg-color-2);
+  }
+  
+  span:nth-of-type(3) {
+    --coefficient: 2;
+    --bg: var(--bg-color-1);
+  }
+  
+  button:active {
+    --active: 0.5;
+  }
+  /*
+  * Last personal styling to make it more friendly.
+  * Source: my own knowledge and experience.
+  */
+
+  table tbody tr td:last-child button .add {
+    padding: --pading;
+    background-color: var(--bg-color-1);
+  }
+
+  main h1 {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  main table thead tr th {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  * {
+    font-family: Arial, Times, serif
+  }
