@@ -17,4 +17,4 @@ Recordatorios, y visualizar el progreso de cada asignación.
 --- Todo from 4/4/2025 to 22/4/2025
 
 - Agregar asignaciones - In progress
----> Interface - In progress.
+---> Interface - In progress 40/100 _of_ progress.
