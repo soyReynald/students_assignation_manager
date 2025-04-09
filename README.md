@@ -4,8 +4,8 @@ La interfaz permitirá a los usuarios agregar asignaciones, establecer recordato
 
 # Manejo Estudiantil - Plataforma para estudiantes y su productividad
 
-- Agregar asignaciones
-- Organizar sus tareas
+- Agregar asignaciones - in progress
+- Organizar sus tareas - 
 - Organizar sus examenes 
 - Agregar y organizar proyectos académicos
 
@@ -17,4 +17,4 @@ Recordatorios, y visualizar el progreso de cada asignación.
 --- Todo from 4/4/2025 to 22/4/2025
 
 - Agregar asignaciones - In progress
----> Interface - In progress 40/100 _of_ progress.
+---> Interface - In progress 40/100 of progress.
