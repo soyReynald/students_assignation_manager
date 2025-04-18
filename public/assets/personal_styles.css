@@ -1,0 +1,39 @@
+main {
+    margin-top: 4%;
+}
+main {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+
+main table {
+    border: 0px;
+}
+
+main table:last-child{
+    text-align: center;
+}
+
+main table {
+    margin-top: 30px;
+}
+
+main table tr td {
+    border-bottom: 3px;
+    border-color: red;
+    border-width: thin;
+    border-style: double;
+    padding: 2.6px;
+}
+main table tr td:last-child {
+    padding: 0px !important;
+    padding-left: 0px !important;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+main table tr td:last-child button{
+    margin-left: 2px;
+}
