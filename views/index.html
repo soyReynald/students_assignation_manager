@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/personal_styles.css" />
+    <title>Students manager</title>
+
+</head>
+<body>
+    <main>
+        <h1>Students assigments manager </h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Assignation</th>
+                    <th>Type / Location</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <%for (var i = 0; i < tasks.length; i++){ %>
+                    <tr>
+                        <td>
+                            <a href='<%= tasks[i].title %>'> Title: <%= tasks[i].title %> </a>
+                        </td>
+                        <td>
+                            <span>Type:  <%= tasks[i].type %></span>
+                        </td>
+                        <td>ACTION would be here</td>
+                    </tr>
+                <% }  %>
+            </tbody>
+        </table>
+    </main>
+
+</body>
+
+</html>
