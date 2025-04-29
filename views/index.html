@@ -12,7 +12,7 @@
 <body>
     <main>
         <h1>Students assigments manager </h1>
-        <table>
+        <table class="assignations-table">
             <thead>
                 <tr>
                     <th>Assignation</th>
@@ -21,17 +21,32 @@
                 </tr>
             </thead>
             <tbody>
-                <%for (var i = 0; i < tasks.length; i++){ %>
+                <%for (var i=0; i < tasks.length; i++){ %>
                     <tr>
                         <td>
                             <a href='<%= tasks[i].title %>'> Title: <%= tasks[i].title %> </a>
                         </td>
                         <td>
-                            <span>Type:  <%= tasks[i].type %></span>
+                            <span>Type: <%= tasks[i].type %></span>
                         </td>
-                        <td>ACTION would be here</td>
+                        <td><button class="btn_action add">
+                                <span aria-hidden="true">Add</span>
+                                <span></span>
+                                <span>Add</span>
+                            </button>
+                            <button class="btn_action edit">
+                                <span aria-hidden="true">Edit</span>
+                                <span></span>
+                                <span>Edit</span>
+                            </button>
+                            <button class="btn_action eliminate">
+                                <span aria-hidden="true">Eliminate</span>
+                                <span></span>
+                                <span><a href="/delete?task_id=<%= tasks[i].task_id %>">Eliminate</a></span>
+                            </button>
+                        </td>
                     </tr>
-                <% }  %>
+                    <% } %>
             </tbody>
         </table>
     </main>

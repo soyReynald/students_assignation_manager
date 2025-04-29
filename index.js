@@ -100,3 +100,16 @@ app.get('/home', (req, res) => {
     res.render('index.html', { title: "Students Tasks Manager", kindOfDay: day, tasks: FoundTasks })
   })
 });
+
+async function deleteTask (task_id) {
+  const newTasks_Array = await taskModel.deleteOne({task_id: task_id});
+  return newTasks_Array;
+}
+
+app.get('/delete', function (req, res) {
+  deleteTask(req.query.task_id).then(function (FoundTasks) {
+    getTasks().then(function (FoundTasks) {
+      res.render('index.html', { title: "Students Tasks Manager", tasks: FoundTasks })
+    })
+  })
+});

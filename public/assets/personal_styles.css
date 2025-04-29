@@ -37,3 +37,7 @@ main table tr td:last-child {
 main table tr td:last-child button{
     margin-left: 2px;
 }
+
+.assignations-table thead {
+    height: 45px;
+}
