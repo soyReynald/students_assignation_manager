@@ -15,6 +15,23 @@
         <table class="assignations-table">
             <thead>
                 <tr>
+                    <td>
+                        <label>Title of the task</label>
+                        <input type="text" name="task_title" />
+                    </td>
+                    <td>
+                        <label>Type of the task</label>
+                        <input type="text" name="task_type" />
+                    </td>
+                    <td>
+                        <button class="btn_action add">
+                            <span aria-hidden="true">Add</span>
+                            <span></span>
+                            <span>Add</span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
                     <th>Assignation</th>
                     <th>Type / Location</th>
                     <th>Action</th>
@@ -29,11 +46,7 @@
                         <td>
                             <span>Type: <%= tasks[i].type %></span>
                         </td>
-                        <td><button class="btn_action add">
-                                <span aria-hidden="true">Add</span>
-                                <span></span>
-                                <span>Add</span>
-                            </button>
+                        <td>
                             <button class="btn_action edit">
                                 <span aria-hidden="true">Edit</span>
                                 <span></span>
