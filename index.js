@@ -113,3 +113,14 @@ app.get('/delete', function (req, res) {
     })
   })
 });
+
+// Add a new task
+app.get('/add', function(req, res){
+  response = {
+    task_title : req.query.task_title,
+    task_type : req.query.task_type,
+    // Here we will have task reminder
+  }
+  console.log(response);
+  // res.end(JSON.stringify(response))
+});
